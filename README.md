@@ -15,7 +15,7 @@ Object. The Strategy Pattern Is a Mix Of: Encapsulating what changes, Favoring c
 Factory Method - Allows subclasses decide which class to instantiate. Abstract Factory -  Creates hierarchies or families of related objects. Builder- Separate the construction of an object from its representation. Facade- Simplifies an interface to a subsystem, decoupling a client from it. Decorator-  Attach additional responsibilities to an object dynamically.
 Adapter- Convert the interface of a class into another interface clients expect.Proxy - Provides a surrogate for another object to control access to it. 
 
-Chapter 11 test automation- Abstraction: Templates Abstract classes and methods are templates that are meant to be implemented by their subclasses . Reserved Word
+Chapter 13 test automation- Abstraction: Templates Abstract classes and methods are templates that are meant to be implemented by their subclasses . Reserved Word
 Classes and methods are declared abstract by
 Implementation Required on Inheritance
 If a subclass extends from an abstract class, it
@@ -25,4 +25,7 @@ Interfaces cannot be instantiated Implement Interfaces are Abstract if not Imple
 An Class that implements an interface, must
 implement all of its methods or it must declare
 itself abstract.  Abstract Methods: methods in an interface must be abstract(explicit declaration needed) or default. 
+Risky Behavior - Chapter 11: A method can throw an exception when something goes wrong at runtime.An exception is always an object of type exception.
+The compiler does not enforce handling of exceptions that are of type RuntimeException. They do not need to be declared or wrapped in a try/catch block.
+To throw an exception in a method, the "throw" keyword is used, followed by a new exception object.
 
